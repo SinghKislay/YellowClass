@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&display=swap');
+
+.Columns {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .Row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+  }
+  .Row2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .Row3 {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+  }
+
+  .First-card {
+    position: relative;
+    margin: 40px;
+    width: 90vh;
+    height: 70vh;
+    box-shadow:
+    0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
+    align-items: center;
+    justify-content: center;
+    overflow: auto;
+  }
+  .Company h2{
+    font-family: 'Oleo Script Swash Caps', cursive;
+    font-size: 3em;
+    
+  
+  
+    background-image: linear-gradient(45deg, #b50d7a, #f7a72f);
+    
+    /* Set the background size and repeat properties. */
+    background-size: 100%;
+    background-repeat: repeat;
+
+    /* Use the text as a mask for the background. */
+    /* This will show the gradient as a text color rather than element bg. */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+  }
+  .First-card h2{
+    font-family: 'Oleo Script Swash Caps', cursive;
+    font-size: 3em;
+    
+  }
+
+  html {
+    overflow:   scroll;
+  }
+  ::-webkit-scrollbar {
+      width: 0px;
+      background: transparent; /* make scrollbar transparent */
+  }
+
+  .button{
+    cursor: pointer;
+    width: 8em;
+    min-height: 4em;
+    background: white;
+    border-radius: 40px;
+    background: linear-gradient(45deg, #b50d7a, #f7a72f);
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 8px 6px -6px #b50d7a;
+  }
+
+  .button p{
+    font-family: 'Oleo Script Swash Caps', cursive;
+    font-size: 1.5em;
+  }
+
+.arrow{
+    width: 2.5em;
+    height: 2.5em;
+    
+}
+
+.arrow:hover{
+    cursor: pointer;
+}
