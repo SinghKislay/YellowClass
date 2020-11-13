@@ -5,6 +5,12 @@ import './canvas.css';
 import BottomScrollListener from 'react-bottom-scroll-listener'
 import left from "./left-chevron.png"
 import right from "./right-chevron.png"
+import {
+    List,
+    AutoSizer,
+    CellMeasurer,
+    CellMeasurerCache,
+} from "react-virtualized"
 
 let hexToRgb = (hex) => {
     var result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
@@ -162,7 +168,7 @@ const Canvas = () => {
         
         if(!choice && !TopicRenderOnce){
             topicList.map((value, index) => {
-                //setLoading(true)
+                
                 axios.get(`${url}search/photos?page=1&client_id=${accessKey}&query=${value}`)
                     .then((res) => {
                         let rgb = hexToRgb(res.data.results[0].color);
@@ -222,7 +228,7 @@ const Canvas = () => {
             {
                 !showModal?
                 <>
-                <div style={{display:"flex", width:"100vw", height:"6em", backgroundColor:"white", boxShadow: "0 8px 6px -6px #b0b0b0"}}>
+                <div className="navbar" style={{display:"flex", width:"100vw", height:"6em", backgroundColor:"white", boxShadow: "0 8px 6px -6px #b0b0b0", position:"sticky"}}>
                     <div className="Company" style={{flexGrow:2, margin:"auto"}}>
                         <h2 style={{ margin:"0"}}>
                             PhotoBooth

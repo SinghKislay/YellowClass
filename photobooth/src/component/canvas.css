@@ -46,34 +46,32 @@
     justify-content: center;
     overflow: auto;
   }
+
+
   .Company h2{
     font-family: 'Oleo Script Swash Caps', cursive;
     font-size: 3em;
-    
-  
-  
     background-image: linear-gradient(45deg, #b50d7a, #f7a72f);
-    
-    /* Set the background size and repeat properties. */
     background-size: 100%;
     background-repeat: repeat;
-
-    /* Use the text as a mask for the background. */
-    /* This will show the gradient as a text color rather than element bg. */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; 
     -moz-background-clip: text;
     -moz-text-fill-color: transparent;
   }
+
+
   .First-card h2{
     font-family: 'Oleo Script Swash Caps', cursive;
     font-size: 3em;
-    
   }
+
 
   html {
     overflow:   scroll;
   }
+
+  
   ::-webkit-scrollbar {
       width: 0px;
       background: transparent; /* make scrollbar transparent */
