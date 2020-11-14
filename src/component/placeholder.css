@@ -4,6 +4,7 @@
   -moz-animation: fadeIn ease 1s;
   -o-animation: fadeIn ease 1s;
   -ms-animation: fadeIn ease 1s;
+  position: relative;
 }
 
 @keyframes fadeIn {
